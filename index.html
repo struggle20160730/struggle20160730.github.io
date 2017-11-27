@@ -20,7 +20,7 @@
 	</head>
 	<body>
 		<div>
-			<audio autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="img/Matteo - Panama.mp3"></audio>
+			<audio id="car_audio" autoplay="autoplay" controls="controls"loop="loop" preload="auto" src="img/Matteo - Panama.mp3"></audio>
 		</div>
 		<div id="demo1">
 			<h3>
@@ -32,5 +32,9 @@
 			---靓仔。 2017/11/24
 			</h4>
 		</div>
+		<script>
+//			ios自动播放,需要先引入微信js
+			 document.getElementById('car_audio').play(); 
+		</script>
 	</body>
 </html>
