@@ -116,6 +116,7 @@ i.envelope,.navbar-default .navbar-nav > li > a:hover i.envelope1{
 }
 .navbar-nav > li {
     float: none;
+    cursor: pointer;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
@@ -468,16 +469,16 @@ ul.wmuSliderPagination {
 .footer{
 	margin:3em 0 0;
 	border-top:1px solid #F1F1F1;
-	padding:2em 0 0;
+	padding:2em;
 }
 .footer-left{
 	float:left;
 }
 .footer-left ul li{
-	display:inline-block;
+	display:block;
 	margin-right:.5em;
 	color:#999;
-	font-size:14px;
+	font-size:16px;
 }
 .footer-left ul li a,.footer-left p a:hover{
 	color:#999;
@@ -1165,6 +1166,10 @@ h2.typoh2{
 	.grid_3 {
 		margin-bottom: 0em;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:640px){
 	h1, .h1, h2, .h2, h3, .h3 {
@@ -1191,6 +1196,10 @@ h2.typoh2{
 	h2.typoh2 {
 		font-size: 1.5em;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:480px){
 	.table h1 {
@@ -1210,6 +1219,10 @@ h2.typoh2{
 	}
 	.pagination {
 		margin: 20px 0 0px;
+	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
 	}
 }
 @media (max-width: 320px){
@@ -1244,6 +1257,10 @@ h2.typoh2{
 	}
 	table.table.table-striped,.table-bordered,.bs-docs-example {
 		display: none;
+	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
 	}
 }
 /*--//Typography --*/
@@ -1415,6 +1432,10 @@ h2.typoh2{
 	.banner-body {
 		padding: 2em 0;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:991px){
 	.banner-body-left {
@@ -1516,6 +1537,10 @@ h2.typoh2{
 		min-height:200px;
 		margin: 2em 0 0em;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:800px){
 	.gallery-grids, .blog, .single {
@@ -1526,6 +1551,10 @@ h2.typoh2{
 	}
 	.gallery-head h5 {
 		margin: 2em 0 0;
+	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
 	}
 }
 @media (max-width:768px){
@@ -1540,6 +1569,10 @@ h2.typoh2{
 	}
 	.latest-news {
 		margin: 2em 0 0;
+	}
+	.MarginToppx{
+		margin: 25px 0;
+		font-size: 20px;
 	}
 }
 @media (max-width:767px){
@@ -1568,6 +1601,10 @@ h2.typoh2{
 	.latest-news {
 		margin: 1em 0 0;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:667px){
 	.logo {
@@ -1583,6 +1620,10 @@ h2.typoh2{
 	}
 	.navbar-toggle {
 		margin: 0 0 0 3em;
+	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
 	}
 }
 @media (max-width: 640px){
@@ -1648,6 +1689,10 @@ h2.typoh2{
 	.mail-grid1 input[type="email"] {
 		margin-left: 1em !important;
 	}
+	.MarginToppx{
+		margin: 6px 0;
+		font-size: 15px;
+	}
 }
 @media (max-width: 600px){
 	.logo {
@@ -1656,6 +1701,10 @@ h2.typoh2{
 	}
 	.logo h1 a {
 		padding: 0.8em 0;
+	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
 	}
 }
 @media (max-width:480px){
@@ -1701,6 +1750,10 @@ h2.typoh2{
 	.mail-grid1 input[type="submit"] {
 		font-size: 14px;
 	}
+	.MarginToppx{
+		margin: 60px 0;
+		font-size: 22px;
+	}
 }
 @media (max-width:414px){
 	.banner, .banner1, .banner2 {
@@ -1726,6 +1779,10 @@ h2.typoh2{
 	.mail-grid1 input[type="submit"] {
 		padding: 7px 0;
 		width: 45%;
+	}
+	.MarginToppx{
+		margin: 8px 0;
+		font-size: 14px;
 	}
 }
 @media (max-width:375px){
@@ -1769,6 +1826,10 @@ h2.typoh2{
 	.map iframe {
 		min-height: 150px;
 		margin: 1.5em 0 0em;
+	}
+	.MarginToppx{
+		margin: 5px 0;
+		font-size: 18px;
 	}
 }
 @media (max-width:320px){
@@ -1880,8 +1941,28 @@ h2.typoh2{
 		padding: 0.8em 0;
 	}
 }
+@media (min-width: 1200px){
+	.MarginToppx {
+	    margin: 60px 0;
+	    font-size: 22px;
+	}
+}
 .LeftMenu>li>.leftMenuColor{
 	color: #D57D39 !important;
     background: transparent;
     border-bottom: 1px solid #D57D39 !important;
+}
+/*菜单栏切换*/
+.banner-body-right2,.banner-body-right3,.banner-body-right4{
+	border: 1px solid #ccc;
+}
+.MarginToppx>.stars{
+	color: red;
+}
+.banner-bodyCentData>p{
+	margin: 40px 0;
+}
+.CentenData>div{
+	margin: 120px 0;
+	font-size: 20px;
 }
