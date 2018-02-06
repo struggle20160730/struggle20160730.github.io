@@ -1,2 +1,0 @@
-webpackJsonp([3],{EXDq:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("\n\ttest页面默认显示，这里是二级路由中展示的\n\n")])},staticRenderFns:[]},r=n("VU/8")({},s,!1,function(e){n("s075")},null,null);t.default=r.exports},s075:function(e,t){}});
-//# sourceMappingURL=3.2863337af12208f0d28d.js.map
