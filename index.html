@@ -10,6 +10,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/layui.css"/>
 	</head>
 	<body>
 		<div class="banner-body">
@@ -21,14 +22,14 @@
 						</div>
 						<div class="top-nav">
 							<nav class="navbar navbar-default">
-								<div class="navbar-header">
+								<!--<div class="navbar-header">
 									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
+									<span class="sr-only">111</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 						  			</button>
-								</div>
+								</div>-->
 								<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 									<nav class="stroke">
 										<ul class="nav navbar-nav LeftMenu">
@@ -52,25 +53,33 @@
 					</div>
 					<div class="col-xs-9 banner-body-right banner-bodyCentData">
 						<div class="wmuSlider example1">
-							<div class="wmuSliderWrapper">
-								<article style="position: absolute; width: 100%; opacity: 0;">
-									<div class="banner-wrap">
-										<div class="banner">
-										</div>
-									</div>
-								</article>
-								<article style="position: absolute; width: 100%; opacity: 0;">
-									<div class="banner-wrap">
-										<div class="banner1">
-										</div>
-									</div>
-								</article>
-								<article style="position: absolute; width: 100%; opacity: 0;">
-									<div class="banner-wrap">
-										<div class="banner2">
-										</div>
-									</div>
-								</article>
+							<div class="layui-carousel" id="test1">
+							  <div carousel-item>
+							    <div>
+							    	<img src="images/peo1.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo2.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo3.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo4.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo5.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo6.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo7.jpg" alt="."/>
+							    </div>
+							    <div>
+							    	<img src="images/peo8.jpg" alt="."/>
+							    </div>
+							  </div>
 							</div>
 						</div>
 						<div class="banner-bottom">
@@ -224,7 +233,6 @@
 							希望在前进的道路上遇到更多志同道合的朋友!
 						</p>
 					</div>
-					
 					<div class="clearfix"> </div>
 					<div class="col-xs-3 banner-body-left">
 						<div class="latest-news">
@@ -367,31 +375,44 @@
 			</div>
 		</div>
 		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/wmuSlider.js"></script>
+		<script src="js/layui.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$('.example1').wmuSlider();
-			$(".LeftMenu>li").click(function(){
-				var index=$(this).index();
-				$(this).children("a").addClass("leftMenuColor").parent().siblings().children("a").removeClass("leftMenuColor");
-				$(".banner-bodyCentData").eq(index).removeClass("hide").siblings(".banner-bodyCentData").addClass("hide");
-			});
-			$("#accordion>div").click(function(){
-				var index=$(this).index();
-				if(index==0){
-					$("#collapseOne").removeClass("hide");
-					$("#collapseTwo").addClass("hide");
-					$("#collapseThree").addClass("hide");
-				}
-				if(index==1){
-					$("#collapseOne").addClass("hide");
-					$("#collapseTwo").removeClass("hide");
-					$("#collapseThree").addClass("hide");
-				}
-				if(index==2){
-					$("#collapseOne").addClass("hide");
-					$("#collapseTwo").addClass("hide");
-					$("#collapseThree").removeClass("hide");
-				}
+			$(function(){
+				layui.use('carousel', function(){
+				  var carousel = layui.carousel;
+				  //建造实例
+				  carousel.render({
+				    elem: '#test1'
+				    ,width: '100%' //设置容器宽度
+				    ,height:'100%'
+				    ,arrow: 'always' //始终显示箭头
+				    ,interval:2000 //切换时间
+//				    ,anim: 'updown' //切换动画方式,向下
+				  });
+				});
+				$(".LeftMenu>li").click(function(){
+					var index=$(this).index();
+					$(this).children("a").addClass("leftMenuColor").parent().siblings().children("a").removeClass("leftMenuColor");
+					$(".banner-bodyCentData").eq(index).removeClass("hide").siblings(".banner-bodyCentData").addClass("hide");
+				});
+				$("#accordion>div").click(function(){
+					var index=$(this).index();
+					if(index==0){
+						$("#collapseOne").removeClass("hide");
+						$("#collapseTwo").addClass("hide");
+						$("#collapseThree").addClass("hide");
+					}
+					if(index==1){
+						$("#collapseOne").addClass("hide");
+						$("#collapseTwo").removeClass("hide");
+						$("#collapseThree").addClass("hide");
+					}
+					if(index==2){
+						$("#collapseOne").addClass("hide");
+						$("#collapseTwo").addClass("hide");
+						$("#collapseThree").removeClass("hide");
+					}
+				});
 			});
 		</script>
 	</body>

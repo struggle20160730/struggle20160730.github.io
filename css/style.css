@@ -377,6 +377,7 @@ i.envelope,.navbar-default .navbar-nav > li > a:hover i.envelope1{
 .wmuSlider {
 	position: relative;
 	overflow: hidden;
+	height: 350px;
 }
 .wmuSlider .wmuSliderWrapper article img {
 	/*--max-width: 100%;
@@ -1965,4 +1966,7 @@ h2.typoh2{
 .CentenData>div{
 	margin: 120px 0;
 	font-size: 20px;
+}
+#test1>div>div>img{
+	width: 100% !important;
 }
