@@ -377,7 +377,6 @@ i.envelope,.navbar-default .navbar-nav > li > a:hover i.envelope1{
 .wmuSlider {
 	position: relative;
 	overflow: hidden;
-	height: 350px;
 }
 .wmuSlider .wmuSliderWrapper article img {
 	/*--max-width: 100%;
@@ -1170,6 +1169,14 @@ h2.typoh2{
 	.MarginToppx{
 		margin: 60px 0;
 		font-size: 22px;
+	}
+	.wmuSlider {
+		height: 255px;
+	}
+}
+@media (min-width:768px){
+	.wmuSlider {
+		height: 350px;
 	}
 }
 @media (max-width:640px){
