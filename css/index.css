@@ -289,7 +289,7 @@ body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot
 body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot_left>div:last-child {
 	width: calc(100% - 120px);
 	color: #999999;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 2;
 }
 
@@ -313,7 +313,7 @@ body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot
 body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot_right>div:last-child {
 	width: calc(100% - 120px);
 	color: #999999;
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 2;
 }
 
