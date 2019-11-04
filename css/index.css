@@ -390,6 +390,14 @@ body #toTop {
 	body section .my_drame{
 		padding: 20px;
 	}
+	body section .swiper_images .swiper-container .swiper-button-next {
+    width: 60px;
+    height: 60px;
+	}
+	body section .swiper_images .swiper-container .swiper-button-prev{
+    width: 60px;
+    height: 60px;
+	}
 	body section .my_drame .my_drame_bot>div .my_drame_right{
 		height: 200px;
 		width: 100%;
@@ -432,6 +440,14 @@ body #toTop {
 	}
 	body header .header_nav div {
 		width: 100px;
+	}
+	body section .swiper_images .swiper-container .swiper-button-next {
+    width: 40px;
+    height: 40px;
+	}
+	body section .swiper_images .swiper-container .swiper-button-prev{
+    width: 40px;
+    height: 40px;
 	}
 	body section .aboutBright {
 		width: 100%;
