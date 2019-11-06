@@ -63,12 +63,10 @@ $(function() {
 		animateClass: 'animated',
 	});
 	wow.init();
-
-//	图片懒加载
+	//	图片懒加载
 	$(window).scroll(function() {
 		handscroll();
 	});
-
 	function handscroll() {
 		let imgs = $("img[data-src]");
 		let bodyScrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
@@ -76,10 +74,15 @@ $(function() {
 		for(let k = 0; k < imgs.length; k++) {
 			let imgHeight = $(imgs[k]).offset().top;
 			let imgData = $(imgs).eq(k).attr("data-src");
-			if(imgHeight < (bodyScrollHeight + windowHeight) && imgHeight >= bodyScrollHeight) {
-				setTimeout(function() {
-					$(imgs).eq(k).attr("src", imgData);
-				}, 1000);
+			var newImg = new Image();
+			newImg.src = imgData;
+			newImg.onload = () => {
+				// 图片加载成功后把地址给原来的img
+				if(imgHeight < (bodyScrollHeight + windowHeight) && imgHeight >= bodyScrollHeight) {
+					setTimeout(function() {
+						$(imgs).eq(k).attr("src", imgData);
+					}, 1000);
+				}
 			}
 		}
 	}
