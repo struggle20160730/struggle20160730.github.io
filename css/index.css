@@ -521,6 +521,9 @@ body #toTop {
 	body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot_left>div:last-child{
 		font-size: 13px;
 	}
+	body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot_right>div:last-child{
+		font-size: 13px;
+	}
 	body section .work_time>div .work_time_bot .work_time_botCent>div .work_time_bot_left {
 		padding-right: 0;
 	}
